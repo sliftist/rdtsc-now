@@ -52,7 +52,7 @@ function getMilliPerClock() {
         targetTime = maxTestTime;
     }
     const clockCycles = clocksPerMilliEstimate * targetTime;
-    console.log({ clockCycles, targetTime, timerPrecision });
+    //console.log({ clockCycles, targetTime, timerPrecision });
     let fastest = Number.MAX_SAFE_INTEGER;
     for(let i = 0; i < testCount; i++) {
         let time = Date.now();
@@ -70,18 +70,17 @@ function getMilliPerClock() {
     return fastest;
 }
 
-// TIMING: ~20ns
 function now() {
     return rdtsc() * milliPerClock;
 }
 module.exports.now = now;
 
-main();
-async function main() {
-    let time = baseTime();
-    for(let i = 0; i < 1000 * 1000; i++) {
-        now();
-    }
-    //await new Promise(r => setTimeout(r, 1000));
-    console.log(baseTime() - time);
-}
+// main();
+// async function main() {
+//     let time = baseTime();
+//     for(let i = 0; i < 1000 * 1000; i++) {
+//         now();
+//     }
+//     //await new Promise(r => setTimeout(r, 1000));
+//     console.log(baseTime() - time);
+// }
