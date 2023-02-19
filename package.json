@@ -1,8 +1,9 @@
 {
   "name": "rdtsc-now",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "index.js",
   "license": "MIT",
+  "repository": "https://github.com/sliftist/rdtsc-now",
   "scripts": {
     "install": "npm run build",
     "build": "node-gyp configure && node-gyp build"
