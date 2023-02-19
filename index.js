@@ -23,9 +23,9 @@ const maxTestTime = 50;
 // Test a few times, in case there is a context switch during a test
 const testCount = 3;
 
-let time = Date.now();
+//let time = Date.now();
 const milliPerClock = getMilliPerClock();
-console.log(`Took ${Date.now() - time}ms to estimate cycles per millisecond.`);
+//console.log(`Took ${Date.now() - time}ms to estimate cycles per millisecond.`);
 
 
 function baseTime() {

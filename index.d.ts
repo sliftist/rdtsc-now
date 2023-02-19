@@ -1,1 +1,1 @@
-declare function now(): number;
+export function now(): number;
