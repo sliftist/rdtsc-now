@@ -1,3 +1,5 @@
+module.allowclient = true;
+
 // If we are in the browser, just use performance.now
 if (typeof document !== "undefined") {
     module.exports.now = function now() {

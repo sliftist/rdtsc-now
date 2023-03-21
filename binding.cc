@@ -158,8 +158,7 @@ inline int64_t Now() {
 #endif
 }
 
-
-namespace nodejsRdtsc{
+namespace nodejsRdtsc {
     double firstNow = 0;
 	void rdtsc(const FunctionCallbackInfo<Value>& args) {
         if (firstNow == 0) {
