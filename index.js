@@ -1,7 +1,14 @@
 module.allowclient = true;
 
+let canCompile = false;
+
+try {
+    require("./build/Release/binding.node");
+    canCompile = true;
+} catch { }
+
 // If we are in the browser, just use performance.now
-if (typeof document !== "undefined") {
+if (typeof document !== "undefined" || !canCompile) {
     module.exports.now = function now() {
         return performance.now();
     };
