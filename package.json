@@ -1,6 +1,6 @@
 {
   "name": "rdtsc-now",
-  "version": "0.3.1",
+  "version": "0.5.0",
   "main": "index.js",
   "license": "MIT",
   "repository": "https://github.com/sliftist/rdtsc-now",
