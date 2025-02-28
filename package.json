@@ -6,6 +6,6 @@
   "repository": "https://github.com/sliftist/rdtsc-now",
   "scripts": {
     "install": "npm run build",
-    "build": "node-gyp configure && node-gyp build"
+    "build": "node-gyp configure && node-gyp build || true"
   }
 }
